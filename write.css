@@ -1,0 +1,121 @@
+@font-face {
+  font-family: OpenSans-Regular;
+  src: url(../fonts/OpenSans/OpenSans-Regular.ttf)
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+
+.alert{
+  width: 100%;
+  background: rgb(0, 255, 106);
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 900;
+  display: none;
+}
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+form { max-width:420px; margin:50px auto; }
+
+.feedback-input {
+  color:black;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid #3c393d;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:2px solid #3c393d; }
+
+.textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+  width:100%;
+}
+.message{
+    text-align: center;
+}
+.wrapper{
+  max-width: 700px;
+  width: 100%;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+.wrapper .title{
+  font-size: 50px;
+  justify-content: center;
+  font-weight: 900;
+  position:static;
+  font-family: OpenSans-Regular;
+  display: block;
+  color: #333;
+  line-height: 1.2;
+  text-align: center;
+  padding-bottom: 43px;
+}
+.wrapper .title::before{
+  content: "";
+  position:absolute;
+  left: 50px;
+  bottom: 0;
+  height: 3px;
+  width: 30px;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+.line{
+  font-family: OpenSans-Regular;
+  text-align: center;
+  font-size: 20px;
+}
+.line1{
+  font-family: OpenSans-Regular;
+  text-align: center;
+  font-size: 20px;
+  color: #6b6d6e;
+}
+[type="submit"]
+{
+  font-family: var(--Playfair); 
+  /*font-family: 'Montserrat', Arial, Helvetica, sans-serif;*/
+  width: 60%;
+  text-align: center;
+  background:#3c393d;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin: top -8px;
+  font-weight:700;
+  background: linear-gradient(-135deg, #71b7e6, #9b59b6)
+}
+[type="submit"]:hover { background:#3c393d; }
+
